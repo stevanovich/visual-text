@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href='style.css' rel='stylesheet' type='text/css' />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	</head>
+	<body onLoad="javascript:manageText();">
+		<table id="work-area">
+			<tr id="geneerator">
+				<td id="text-area">
+					<textarea placeholder="Введите текст сюда">Абракадабра</textarea>
+				</td>
+				<td id="img-area">
+					<div id="img-box">
+						<img id="img-container" src="" />
+						<div id="img-assignment">
+							<a href="#" class="disabled">⇚</a>
+							<a href="javascript:manageText();">↻</a>
+							<a href="#" class="disabled">⇛</a>
+						</div>
+						<div id="img-text"></div>
+					</div>
+					<table id="img-controls">
+						<tr>
+							<td id="play"><a href="#">►</a></td>
+							<td id="previous-frame"><a href="#">&lsaquo;</a></td>
+							<td width="*">
+								<div id="frame-bar" class="slider">
+									<div class="slider-thumb"></div>
+								</div>
+							</td>
+							<td id="next-frame"><a href="#">&rsaquo;</a></td>
+						</tr>
+						<tr>
+							<td id="img-duration" colspan="4">
+								Кадр длиться <input type="text" value="1" /> cек.
+								<span id="slider-values">
+									textX: <span id="textX">&nbsp;</span><br />
+									textY: <span id="textY">&nbsp;</span>
+								</span>
+							</td>
+						</tr>
+					</table>
+<!--					<div id="slider-values">
+						Slide: <span id="slide">&nbsp;</span>
+						Change: <span id="change">&nbsp;</span>
+					</div>
+!-->				</td>
+			</tr>
+		</table>
+<!--		<div id="global-management">
+			<div id="save-controls">
+				<div id="title">
+					<span class="label">Заголовок для анимации</span>
+					<input type="text" />
+				</div>
+				<input type="submit" id="share-button" value="Сохранить" />
+			</div>
+		</div>
+!-->	</body>
+	<script type="text/javascript" src="script.js"></script>
+</html>
